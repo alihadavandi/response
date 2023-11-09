@@ -1,0 +1,139 @@
+div.menu{
+    width: 100%;
+    height: 40px;
+    background-color: #2b2b2b;
+
+
+}
+#close,#show,label[for=show],label[for=close]{
+    display: none;
+}
+
+div.menu>nav{
+    width: inherit;
+    height: inherit;
+}
+div.menu>nav>ul{
+    width: inherit;
+    height: inherit;
+    list-style: none;
+    text-align: center;
+
+}
+
+div.menu>nav>ul>li{
+    display: inline-block;
+    width:fit-content;
+    height: inherit;
+    
+
+}
+
+div.menu>nav>ul>li>a{
+    display: block;
+    width: fit-content;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: whitesmoke;
+    transition: 300ms;
+}
+
+div.menu>nav>ul>li>a:hover{
+    background-color: deeppink;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+ 
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+div.swiper{
+    width: 100%;
+    height: calc(100vh - 40px);
+    position: relative;
+}
+
+div.swiper-slide img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+div.products{
+    width: 100%;
+    height: auto;
+    background-color: #2b2b2b;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+   
+  
+
+}
+
+div.products>div.product{
+    width: 22%;
+    height: auto;
+    margin-left: 20px;
+    display: inline-block;
+    
+    
+}
+
+div.products>div.product>h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+div.products>div.product>p{
+font-size: 16px;
+font-weight: 500;
+color: whitesmoke;
+text-align: justify;
+
+}
+
+div.products>div.product>img{
+  width: 100%;
+  height: 100%;
+}
+
+div.products>div.product>a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 999px;
+}

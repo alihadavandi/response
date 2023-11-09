@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- make web site -->
+    <div class="wrapper">
+        <label for="show">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <input type="radio" name="modal" id="show">
+        <input type="radio" name="modal" id="close">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">images</a></li>
+                    <li><a href="#">contacts</a></li>
+                    <li><a href="#">videos</a></li>
+                </ul>
+               
+            </nav>
+            <label for="close">&times;</label>
+        </div>
+<!-- make swiper -->
+        <div class="swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/1.webp" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/2.webp" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/3.webp" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/4.jpg" alt="">
+                  </div>
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+        <!-- end make swiper -->
+        <!-- make products -->
+        <div class="products">
+            <div class="product">
+                <h2>Hello-world</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam sapiente sequi inventore magnam suscipit vel, perspiciatis possimus numquam ducimus excepturi vitae quo ab, est optio natus voluptates? Sint dignissimos nostrum quisquam molestiae quis assumenda deleniti atque nam quibusdam. Rerum, aliquam ipsa! Fuga architecto in reiciendis, dolore dicta molestias adipisci repudiandae animi assumenda explicabo eos consequuntur laudantium tempore ex reprehenderit quae cupiditate suscipit. Rerum dolores vitae debitis quibusdam id ut, distinctio dolore delectus explicabo vel, quae, est expedita eligendi facere optio libero perspiciatis. Cum doloribus nobis accusamus in, error odit saepe! Dolorum veritatis magni suscipit quo, fuga quas? Enim, animi.</p>
+                <img src="./images/karim.webp" alt="">
+                <a href="#">buy</a>
+            </div>
+
+            <div class="product">
+                <h2>Hello-world</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam sapiente sequi inventore magnam suscipit vel, perspiciatis possimus numquam ducimus excepturi vitae quo ab, est optio natus voluptates? Sint dignissimos nostrum quisquam molestiae quis assumenda deleniti atque nam quibusdam. Rerum, aliquam ipsa! Fuga architecto in reiciendis, dolore dicta molestias adipisci repudiandae animi assumenda explicabo eos consequuntur laudantium tempore ex reprehenderit quae cupiditate suscipit. Rerum dolores vitae debitis quibusdam id ut, distinctio dolore delectus explicabo vel, quae, est expedita eligendi facere optio libero perspiciatis. Cum doloribus nobis accusamus in, error odit saepe! Dolorum veritatis magni suscipit quo, fuga quas? Enim, animi.</p>
+                <img src="./images/karim.webp" alt="">
+                <a href="#">buy</a>
+            </div>
+
+            <div class="product">
+                <h2>Hello-world</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam sapiente sequi inventore magnam suscipit vel, perspiciatis possimus numquam ducimus excepturi vitae quo ab, est optio natus voluptates? Sint dignissimos nostrum quisquam molestiae quis assumenda deleniti atque nam quibusdam. Rerum, aliquam ipsa! Fuga architecto in reiciendis, dolore dicta molestias adipisci repudiandae animi assumenda explicabo eos consequuntur laudantium tempore ex reprehenderit quae cupiditate suscipit. Rerum dolores vitae debitis quibusdam id ut, distinctio dolore delectus explicabo vel, quae, est expedita eligendi facere optio libero perspiciatis. Cum doloribus nobis accusamus in, error odit saepe! Dolorum veritatis magni suscipit quo, fuga quas? Enim, animi.</p>
+                <img src="./images/karim.webp" alt="">
+                <a href="#">buy</a>
+            </div>
+
+            <div class="product">
+                <h2>Hello-world</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam sapiente sequi inventore magnam suscipit vel, perspiciatis possimus numquam ducimus excepturi vitae quo ab, est optio natus voluptates? Sint dignissimos nostrum quisquam molestiae quis assumenda deleniti atque nam quibusdam. Rerum, aliquam ipsa! Fuga architecto in reiciendis, dolore dicta molestias adipisci repudiandae animi assumenda explicabo eos consequuntur laudantium tempore ex reprehenderit quae cupiditate suscipit. Rerum dolores vitae debitis quibusdam id ut, distinctio dolore delectus explicabo vel, quae, est expedita eligendi facere optio libero perspiciatis. Cum doloribus nobis accusamus in, error odit saepe! Dolorum veritatis magni suscipit quo, fuga quas? Enim, animi.</p>
+                <img src="./images/karim.webp" alt="">
+                <a href="#">buy</a>
+            </div>
+        </div>
+        <!-- end make products -->
+    </div>
+    <!-- end make web site -->
+
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
